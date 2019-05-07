@@ -5,13 +5,5 @@ def nyc_pigeon_organizer(data)
   pigeonSorted = {}
   
   
-data.collect{|attribute,pdata| 
-	pdata.collect{|info,names| 
-		names.each{|name| 
-			pigeonSorted.keys.include?(name) ? pigeonSorted[name].keys.include?(attribute) ? pigeonSorted[name][attribute] << info.to_s : pigeonSorted[name]=pigeonSorted[name].merge({attribute=>[info.to.s]}) : pigeonSorted[name]={attribute => [info.to_s]}
-			binding.pry
-		}
-	}
-}
-pigeonSorted
+
 end
