@@ -8,8 +8,9 @@ def nyc_pigeon_organizer(data)
 data.each{|attribute,pdata| 
 	pdata.each{|info,names| 
 		names.each{|name| 
+		binding.pry
 			pigeonSorted.keys.include?(name) ? pigeonSorted[name][attribute] << info.to_s : pigeonSorted[name]={attribute => [info.to_s]}
-			binding.pry
+			
 		}
 	}
 }
