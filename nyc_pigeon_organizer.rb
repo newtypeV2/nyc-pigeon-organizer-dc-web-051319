@@ -9,7 +9,6 @@ data.collect{|attribute,pdata|
 	pdata.collect{|info,names| 
 		names.each{|name| 
 			pigeonSorted.keys.include?(name) ? pigeonSorted[name][attribute] << info.to_s : pigeonSorted[name]={attribute => [info.to_s]}
-			pigeonSorted[name].keys.include?(attribute) ? pigeonSorted[name][attribute] << info.to_s : pigeonSorted[name]={attribute => [info.to_s]}
 			binding.pry
 		}
 	}
