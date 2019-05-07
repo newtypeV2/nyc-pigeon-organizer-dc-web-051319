@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
 		binding.pry
 			pigeonSorted.keys.include?(name) ? 
 				pigeonSorted[name].keys.include?(attribute) ? 
-					pigeonSorted[name][attribute] => [info]}) : pigeonSorted[name][attribute] => [info]}) << info} 
+					pigeonSorted[name][attribute] => [info]}) : pigeonSorted[name][attribute] => [info]} << info} 
 				: pigeonSorted[name]={attribute => [info]} 
 		}
 	}
