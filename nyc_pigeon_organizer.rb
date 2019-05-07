@@ -5,11 +5,11 @@ def nyc_pigeon_organizer(data)
   pigeonSorted = {}
   
   
-data.each{|attribute,pdata| 
-	pdata.each{|info,names| 
+data.collect{|attribute,pdata| 
+	pdata.collect{|info,names| 
 		names.each{|name| 
 			pigeonSorted.keys.include?(name) ? pigeonSorted[name][attribute] << info.to_s : pigeonSorted[name]={attribute => [info.to_s]}
-			#binding.pry
+			binding.pry
 		}
 	}
 }
