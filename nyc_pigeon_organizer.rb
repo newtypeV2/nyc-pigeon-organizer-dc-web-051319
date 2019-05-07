@@ -11,6 +11,5 @@ def nyc_pigeon_organizer(data)
 		}
 	}
 }
-
-
+pigeonSorted
 end
